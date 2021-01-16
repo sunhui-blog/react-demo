@@ -1,0 +1,28 @@
+{
+  "name": "react-demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "webpack-dev-server --mode=development --port 8091 --hot",
+    "build": "webpack --mode=production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sunhui-blog/react-demo.git"
+  },
+  "author": "sunhui",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sunhui-blog/react-demo/issues"
+  },
+  "homepage": "https://github.com/sunhui-blog/react-demo#readme",
+  "dependencies": {
+    "html-webpack-plugin": "^4.5.1",
+    "webpack": "^5.15.0",
+    "webpack-dev-server": "^3.11.2"
+  },
+  "devDependencies": {
+    "webpack-cli": "^3.3.1"
+  }
+}
