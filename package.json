@@ -18,6 +18,8 @@
   },
   "homepage": "https://github.com/sunhui-blog/react-demo#readme",
   "dependencies": {
+    "@babel/core": "^7.12.10",
+    "babel-loader": "^8.2.2",
     "html-webpack-plugin": "^4.5.1",
     "webpack": "^5.15.0",
     "webpack-dev-server": "^3.11.2"

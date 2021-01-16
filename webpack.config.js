@@ -12,6 +12,25 @@ var config = {
     path: path.resolve(__dirname, 'dist'),
     filename: 'bundle.js'
   }, // 打包输出文件
+  module: {
+    rules: [
+      {
+        test: /\.less$/,
+        use: [
+          { loader: 'style-loader' },
+          { loader: 'css-loader' },
+          { loader: 'less-loader' }
+        ]
+      },
+      {
+        test: /\.js$/,
+        exclude: /node_modules/,
+        use: [
+          { loader: 'babel-loader' }
+        ]
+      }
+    ]
+},
   plugins: [
     new HtmlwebpackPlugin({
       title: 'Hello React'
